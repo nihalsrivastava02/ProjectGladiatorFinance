@@ -1,0 +1,117 @@
+<div class="login-page">
+  <mat-card class="mat-elevation-z12">
+    <mat-card-title style="text-align:center;">SignUp</mat-card-title>
+    <mat-tab-group mat-stretch-tabs class="example-stretched-tabs">
+      
+      <mat-tab label="Sign Up">
+        <mat-card-content>
+          <form action="">
+
+            <mat-form-field>
+              <input matInput placeholder="First Name" required name="firstname" ngModel  #firstname="ngModel">
+              <mat-icon matSuffix>perm_identity</mat-icon>
+              <mat-error *ngIf="firstname.invalid">Firstname is required</mat-error>
+            </mat-form-field>
+
+              <mat-form-field>
+                <input matInput placeholder="Last Name" name="lastname" ngModel  #lastname="ngModel">
+                <mat-icon matSuffix>perm_identity</mat-icon>
+              </mat-form-field>
+
+            <mat-form-field>
+              <input matInput placeholder="Email" required  name="email"  ngModel #email="ngModel">
+                <mat-error *ngIf="email.invalid">Email is required.</mat-error>
+              <mat-icon matSuffix>contact_mail</mat-icon>
+            </mat-form-field>
+
+            <mat-form-field>
+              <input matInput placeholder="Mobile No." required  name="mobile"  ngModel #mobile="ngModel">
+                <mat-error *ngIf="mobile.invalid">Mobile no. is required.</mat-error>
+              <mat-icon matSuffix>contact_phone</mat-icon>
+            </mat-form-field>
+            
+            <mat-form-field>
+              <input matInput placeholder="Address line 1" required name="address1" ngModel  #address1="ngModel">
+              <mat-icon matSuffix>home</mat-icon>
+              <mat-error *ngIf="address1.invalid">Address is required.</mat-error>
+            </mat-form-field>
+
+            <mat-form-field>
+              <input matInput placeholder="Address line 2" name="address" ngModel  #address="ngModel">
+              <mat-icon matSuffix>home</mat-icon>
+            </mat-form-field>
+
+            <mat-form-field>
+              <input matInput placeholder="Country" required name="country" ngModel  #country="ngModel">
+              <mat-icon matSuffix>home</mat-icon>
+              <mat-error *ngIf="country.invalid">Country is required.</mat-error>
+            </mat-form-field>
+
+            <mat-form-field>
+              <input matInput placeholder="State" required name="state" ngModel  #state="ngModel">
+              <mat-icon matSuffix>home</mat-icon>
+              <mat-error *ngIf="state.invalid">state is required.</mat-error>
+            </mat-form-field>
+
+            <mat-form-field>
+              <input matInput placeholder="City" required name="city" ngModel  #city="ngModel">
+              <mat-icon matSuffix>home</mat-icon>
+              <mat-error *ngIf="city.invalid">city is required.</mat-error>
+            </mat-form-field>
+
+            <mat-form-field>
+              <input matInput placeholder="UserName" required  name="username"  ngModel #username="ngModel">
+                <mat-error *ngIf="username.invalid">Username is required.</mat-error>
+                <mat-icon matSuffix>account_circle</mat-icon>
+            </mat-form-field>
+
+            <mat-form-field>
+              <input  matInput placeholder="Password" type="password"required minlength="6"name="password"ngModel #password="ngModel">
+                <mat-error  *ngIf="password.errors && password.errors.required">Password is required.</mat-error>
+                <mat-error  *ngIf="password.errors && password.errors.minlength">Password must be of length 6.</mat-error>
+              <mat-icon matSuffix>lock</mat-icon>
+            </mat-form-field>
+
+            <mat-form-field>
+                <input matInput placeholder="Confirm Password" type="password" required  minlength="6" name="repassword"ngModel  #repassword="ngModel">
+                <mat-error *ngIf="repassword.errors && repassword.errors.required">Re-Enter Password is required.</mat-error>
+              <mat-icon matSuffix>lock</mat-icon>
+            </mat-form-field>
+
+            <mat-form-field>
+              <input matInput placeholder="PAN No." required name="pan" ngModel  #pan="ngModel">
+              <mat-icon matSuffix>credit_card</mat-icon>
+              <mat-error *ngIf="pan.invalid">PAN is required.</mat-error>
+            </mat-form-field>
+
+            <mat-form-field>
+              <input matInput placeholder="Aadhar No." required name="aadhar" ngModel  #aadhar="ngModel">
+              <mat-icon matSuffix>credit_card</mat-icon>
+              <mat-error *ngIf="aadhar.invalid">Aadhar no. is required.</mat-error>
+            </mat-form-field>
+
+            <mat-form-field>
+              <input matInput placeholder="Bank Name" required name="bank" ngModel  #bank="ngModel">
+              <mat-icon matSuffix>account_balance</mat-icon>
+              <mat-error *ngIf="bank.invalid">Bank name is required.</mat-error>
+            </mat-form-field>
+
+            <mat-form-field>
+              <input matInput placeholder="IFSC No." required name="ifsc" ngModel  #ifsc="ngModel">
+              <mat-icon matSuffix>account_balance</mat-icon>
+              <mat-error *ngIf="pan.invalid">IFSC no. is required.</mat-error>
+            </mat-form-field>
+
+            <mat-form-field>
+              <input matInput placeholder="Account No." required name="account" ngModel  #account="ngModel">
+              <mat-icon matSuffix>account_balance</mat-icon>
+              <mat-error *ngIf="pan.invalid">Account no. is required.</mat-error>
+            </mat-form-field>
+           
+            <button mat-raised-button color="primary" class="login-button">Sign Up</button>
+          </form>
+        </mat-card-content>
+      </mat-tab>
+    </mat-tab-group>
+  </mat-card>
+</div>
