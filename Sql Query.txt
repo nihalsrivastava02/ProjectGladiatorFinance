@@ -6,7 +6,7 @@ Info:
 	              If a customer purchases a product on 4th June 2020 on 3 months EMI, then his/her EMI will start on 10th July 2020, next two EMI's would be due on 10th August 2020 and 10th September 	                              2020.
 3. Few small changes changes in the name of columns would have been there due to the Database restrictions. Kindly go through it properly. Changes have been updated on the shared folder excel sheet also.
 4. Kindly use proper names, constraints, data types in the java code. Use proper form/data validation wherever required.
-5. Check for all the not null, unique constraints. Have logic to cath the exceptions.
+5. Check for all the not null, unique constraints. Have logic to catch the exceptions.
 6. Formulate logic of the code in accordance with the information provided.
 7. Drop those tables whose name are same as the below tables before running the given queries. 
 
