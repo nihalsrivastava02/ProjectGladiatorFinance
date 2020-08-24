@@ -1,0 +1,8 @@
+<h2> DHNAKOSH </h2>
+<h3> About Us </h3>
+<br> <br>
+<p> Dhankosh is an unified solution providing online shopping and no-cost finance service under the same hood.</p>
+<p> It is an intelligent solution where you can purchase prodcuts of your choice and avail no-cost EMI's without going through any third-party finance service.</p>
+<p> We provide an integrated, robust and seamless experience of buying and hassle free payment option through easy no-cost EMIs.</p>
+<p> Experience the remarkable solution and fell in love with Dhankosh. </p>
+<p> Happy Shopping!</p>
