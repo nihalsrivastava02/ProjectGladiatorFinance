@@ -1,28 +1,60 @@
-<mat-table [dataSource]="dataSource" class="mat-elevation-z8">
-    <!-- Position Column -->
-    <ng-container matColumnDef="position">
-      <mat-header-cell *matHeaderCellDef> No. </mat-header-cell>
-      <mat-cell *matCellDef="let element"> {{element.position}} </mat-cell>
-    </ng-container>
-  
-    <!-- Name Column -->
-    <ng-container matColumnDef="name">
-      <mat-header-cell *matHeaderCellDef> Name </mat-header-cell>
-      <mat-cell *matCellDef="let element"> {{element.name}} </mat-cell>
-    </ng-container>
-  
-    <!-- Weight Column -->
-    <ng-container matColumnDef="weight">
-      <mat-header-cell *matHeaderCellDef> Weight </mat-header-cell>
-      <mat-cell *matCellDef="let element"> {{element.weight}} </mat-cell>
-    </ng-container>
-  
-    <!-- Symbol Column -->
-    <ng-container matColumnDef="symbol">
-      <mat-header-cell *matHeaderCellDef> Symbol </mat-header-cell>
-      <mat-cell *matCellDef="let element"> {{element.symbol}} </mat-cell>
-    </ng-container>
-  
-    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
-    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
-  </mat-table>
+<div class="emi-chart">
+    <mat-card class="mat-elevation-z12">
+      <mat-card-title style="text-align:center;">EMI CHART</mat-card-title>
+      <mat-tab-group mat-stretch-tabs class="example-stretched-tabs">
+       
+        <mat-tab label="Emi chart">
+            <mat-card-content>
+                <mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+                    
+                    <ng-container matColumnDef="dueid">
+                      <mat-header-cell *matHeaderCellDef> dueid </mat-header-cell>
+                      <mat-cell *matCellDef="let element"> {{element.dueid}} </mat-cell>
+                    </ng-container>
+                                       
+                    <ng-container matColumnDef="purchasetxnid">
+                      <mat-header-cell *matHeaderCellDef> Purchasetxnid </mat-header-cell>
+                      <mat-cell *matCellDef="let element"> {{element.purchasetxnid}} </mat-cell>
+                    </ng-container>
+                  
+                    
+                    <ng-container matColumnDef="duedate">
+                      <mat-header-cell *matHeaderCellDef> DueDate </mat-header-cell>
+                      <mat-cell *matCellDef="let element"> {{element.duedate}} </mat-cell>
+                    </ng-container>
+
+                    <ng-container matColumnDef="paymenttobedone">
+                      <mat-header-cell *matHeaderCellDef> PaymentToBeDone </mat-header-cell>
+                      <mat-cell *matCellDef="let element"> {{element.paymenttobedone}} </mat-cell>
+                    </ng-container>                  
+                    
+                    <ng-container matColumnDef="initialtobebalance">
+                      <mat-header-cell *matHeaderCellDef> InitialToBeBalance </mat-header-cell>
+                      <mat-cell *matCellDef="let element"> {{element.initialtobebalance}} </mat-cell>
+                    </ng-container>
+
+                    <ng-container matColumnDef="afterpaymenttobebalance">
+                      <mat-header-cell *matHeaderCellDef> AfterPaymentToBeBalance </mat-header-cell>
+                      <mat-cell *matCellDef="let element"> {{element.afterpaymenttobebalance}} </mat-cell>
+                    </ng-container>
+
+                    <ng-container matColumnDef="installmentmonthno">
+                      <mat-header-cell *matHeaderCellDef> InstallmentMonthNo </mat-header-cell>
+                      <mat-cell *matCellDef="let element"> {{element.installmentmonthno}} </mat-cell>
+                    </ng-container>
+
+                    <ng-container matColumnDef="status">
+                      <mat-header-cell *matHeaderCellDef>	Status </mat-header-cell>
+                      <mat-cell *matCellDef="let element"> {{element.status}} </mat-cell>
+                    </ng-container>
+                                      
+                    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+                    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+                  </mat-table>
+                  <mat-paginator #paginator [length]="100" [pageSize]="10" [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+            </mat-card-content>
+            
+        </mat-tab>
+        </mat-tab-group>
+        </mat-card>
+        </div>
