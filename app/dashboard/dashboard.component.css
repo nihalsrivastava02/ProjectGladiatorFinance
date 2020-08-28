@@ -1,0 +1,17 @@
+h1{
+    text-align: center;
+}
+.carddetails{
+    align-content: center;
+    margin-left: 36%;
+    border-style: outset;
+    margin-right: 30%;
+}
+table {
+    width: 100%;
+  }
+  
+  .mat-form-field {
+    font-size: 14px;
+    width: 100%;
+  }

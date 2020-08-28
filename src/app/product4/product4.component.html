@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<div class="bordered" >
+	<table>
+		<tr>
+			<th rowspan="3">
+			<img src="./assets/4.jpg" alt="car" height="300" width="300">
+			</th>
+			<td class="h1">
+				<b>PRODUCT NAME: Bluestar AC</b>
+			</td>
+		</tr>
+		<tr>
+			<td class="h1">
+				<b>PRODUCT DETAILS:<BR>
+				Electronic Appliance<br>
+				AC<BR></b>
+			</td>
+		</tr>
+		<tr>
+			<td class="h1">
+				<b>COST:30000</b>
+			</td>
+		</tr>
+		<tr>
+			<th></th>
+			<th class="h2">
+				EMI PERIOD
+			</th>
+		</tr>
+		<tr>
+			<th></th>
+			<th><br>
+                <mat-form-field appearance="fill" >
+                    <mat-label>Choose an EMI plan</mat-label>
+                    <mat-select  [(ngModel)]="option">
+                      <mat-option value="3">3 months</mat-option>
+                      <mat-option value="6">6 months</mat-option>
+					  <mat-option value="9">9 months</mat-option>
+					  <mat-option value="12">12 months</mat-option>
+                    </mat-select>
+				  </mat-form-field>
+				  <button (click)="show()">Set EMI Tenure</button>
+                <br><br><br>
+                    EMI STARTING 2500PM
+                <br><br><br>
+                <button mat-raised-button color="primary" (click)="PaynowHandler()">Pay Now</button>
+                <br><br>
+                <a>Terms and Condition</a>
+			</th>
+		</tr>
+	</table>
+</div>
+</body>
+</html>

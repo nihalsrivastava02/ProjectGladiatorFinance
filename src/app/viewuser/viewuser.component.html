@@ -1,0 +1,47 @@
+<div class="main">
+   <!-- <div><button (click)="showall">View User</button></div> -->
+    <div class="headbar">
+        <h1 style="color: white;"> Existing Customer Details </h1>
+    </div>
+    <div style="overflow-x:auto;">
+        <table>
+            <tr>
+                <th>FirstName</th>
+                <th>LastName</th>	
+                <th>EmailID</th>	
+                <th>PhoneNo</th>	
+                <th>Username</th>
+                <th>Password</th>	
+                <th>PAN</th>	
+                <th>AadharNo</th>
+                <th>BankName</th>	
+                <th>AccountNo</th>
+                <th>IFSC</th>	
+                <th>AddressLine1</th>	
+                <th>AddressLine2</th>	
+                <th>City</th>	
+                <th>State</th>	
+                <th>Country</th>		
+            </tr>
+            <tr *ngFor="let Viewuser of users ">  
+                <td>{{Viewuser.firstname}}</td> 
+                <td>{{Viewuser.lastname}}</td>  
+                <td>{{Viewuser.emailid}}</td> 
+                <td>{{Viewuser.phoneno}}</td>
+                <td>{{Viewuser.username}}</td>
+                <td>{{Viewuser.password}}</td>
+                <td>{{Viewuser.pan}}</td>
+                <td>{{Viewuser.aadharno}}</td>
+                <td>{{Viewuser.bankname}}</td>
+                <td>{{Viewuser.accountno}}</td>
+                <td>{{Viewuser.ifsc}}</td>
+                <td>{{Viewuser.addressline1}}</td>
+                <td>{{Viewuser.addressline2}}</td>
+                <td>{{Viewuser.city}}</td>
+                <td>{{Viewuser.state}}</td>
+                <td>{{Viewuser.country}}</td>
+            </tr>   
+            
+        </table>
+    </div>
+</div>
