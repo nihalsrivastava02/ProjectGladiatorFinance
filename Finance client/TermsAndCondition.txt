@@ -1,0 +1,37 @@
+<h3> Registration </h3>
+<h4>Terms & Conditions</h4>
+<ol>
+<li>These Terms and Conditions constitute a legally binding agreement made between you, whether personally or on behalf of an entity (“you”) and [Dhankosh] (“we,” “us” or “our”), concerning your access to and use of the [Dhankosh.com] website as well as any other media form, media channel, mobile website or mobile application related, linked, or otherwise connected thereto (collectively, the “Site”).</li>
+<li>You agree that by accessing the Site, you have read, understood, and agree to be bound by all of these Terms and Conditions. If you do not agree with all of these Terms and Conditions, then you are expressly prohibited from using the Site and you must discontinue use immediately.</li>
+<li>Supplemental terms and conditions or documents that may be posted on the Site from time to time are hereby expressly incorporated herein by reference. We reserve the right, in our sole discretion, to make changes or modifications to these Terms and Conditions at any time and for any reason.</li>
+<li>We will alert you about any changes by updating the “Last updated” date of these Terms and Conditions, and you waive any right to receive specific notice of each such change.</li>
+<li>It is your responsibility to periodically review these Terms and Conditions to stay informed of updates. You will be subject to, and will be deemed to have been made aware of and to have accepted, the changes in any revised Terms and Conditions by your continued use of the Site after the date such revised Terms and Conditions are posted.</li>
+<li>The information provided on the Site is not intended for distribution to or use by any person or entity in any jurisdiction or country where such distribution or use would be contrary to law or regulation or which would subject us to any registration requirement within such jurisdiction or country.<li>
+<li> To avail the services of Dhankosh you will have to submit your personal details, bank accountdetails, PAN and aadhar.</li>
+<li> Above mentioned details are required for user verification, KYC and credit verification.</li>
+<li> Upon registration for the service of No-Cost EMI, customer has to pay one-time non refundable fee depending on the type of card he/she wants to avail.</li>
+<li> One-time non refundable fee for Gold card is 1000 and for Titanium card is 2000.</li>
+<li> The above mentioned one-time fee will not refunded if the user registration is declined by the service provider.</li>
+<li> Purchase limit for the Gold card is Rs 75,000 and purchase limit for Titanium Card is Rs1,50,000.</li>
+<li> Upon reaching the purchase limit customer will not be able to purchase any product.</li>
+<li> Customer's account will go on hold if you fail to pay the EMI on or before the EMI due date. You won't be able to do any further purchases till all your dues are cleared.</li>
+<li> All customer data is secured with Dhankosh, and data-sharing without the consent of customer is prohibited.</li>
+<li> Reach out to us in case of any feedback/compalint/sugggestions.</li>
+<li> All legal dispute will be under the juridiction of High Court, Mumbai, Maharashtra.</li>
+</ol>
+
+ ==============================================================+++++++++++++++++++++++++++++++++++++++++================================================================
+
+<h3> Purchase and EMI </h3>
+<h4> Terms & Conditions </h4>
+<ol>
+<li> Product's total cost is the sum of product cost and processing charge. 99% component of the total cost is the cost of the product and 1% component of the total cost is the processing cgarge</li>
+<li> To understand the cost, suppose Rs30000 is the total cost of the product then Rs 29700 is the cost of the product and Rs300 is the processing charge.</li>
+<li> Your EMI will be calulated on the total cost of the product based on the tenure length of the EMI option availed by you.</li>
+<li> To understand the EMI structure, if the total cost of your purchase is Rs45000 and you selected EMI tenure as 3 months, then you'll have to pay 3 EMI's of Rs15000 on or before the due date.</li>
+<li> EMI for any purchase starts on 10th Day of the next month and subsequent EMI's are also due on the 10th day of the upcoming months, whatever may be the date of purchase.</li>
+<li> For e.g., If a customer purchases a product on 24th June 2020 on 3 months EMI, then his/her EMI will start on 10th July 2020, next two EMI's would be due on 10th August 2020 and 10th September 2020. If a customer purchases a product on 4th June 2020 on 3 months EMI, then his/her EMI will start on 10th July 2020, next two EMI's would be due on 10th August 2020 and 10th September 2020.</li>
+<li> Purchase limit for the Gold card is Rs 75,000 and purchase limit for Titanium Card is Rs1,50,000.</li>
+<li> Upon reaching the purchase limit customer will not be able to purchase any product.</li>
+<li> Customer's account will go on hold if you fail to pay the EMI on or before the EMI due date. You won't be able to do any further purchases till all your dues are cleared.</li>
+</ol>
