@@ -49,6 +49,13 @@ font-size: 1.2vw;
 a:link{
 	text-decoration: none;
 }
+.head{
+    background-color:#FFFFFF;
+    width: 80%;
+    text-align: center;
+    color: #f4511e;
+    height: 120px;
+}
 .button{
 	border:none;
 	display:inline-block;
@@ -200,7 +207,7 @@ hr{
 /* /for bars and cross/ */
 .imgbox{
 	height: 400px;
-	width: 32%;
+	width: 48%;
 	margin-left: 1%;
 	background-color: white;
 	z-index: 3;
@@ -208,6 +215,7 @@ hr{
 	margin-bottom: 20px;
 }
 .boxcontent{
+	height: 400px;
 	width: 90%;
 	margin-left: 5%;
 }
@@ -234,6 +242,7 @@ img:hover{
 }
 .imgabout{
 	width: 48.3%;
+	height: 380px;
 	margin-left: 1%;
 }
 .contact{
@@ -265,6 +274,8 @@ img:hover{
     overflow: hidden;
 	background-color: #333;
 	height: 7%;
+	width: 100%;
+	float: left;
   }
   
   /* Navbar links */

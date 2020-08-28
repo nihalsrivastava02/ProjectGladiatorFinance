@@ -1,4 +1,5 @@
 import { Component, OnInit, HostListener } from '@angular/core';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-index',
   templateUrl: './index.component.html',
@@ -6,7 +7,14 @@ import { Component, OnInit, HostListener } from '@angular/core';
 })
 export class IndexComponent implements OnInit {
 
-  constructor() { }
+  keyword: string;
+  loginOrLogout: string;
+  uId : number;
+  constructor(
+    private _router : Router,
+    ) { }
+
+
   @HostListener("window:scroll", [])
   onWindowScroll() {
     var navbar = document.getElementById("navbar");
@@ -19,20 +27,32 @@ export class IndexComponent implements OnInit {
   }
 
   ngOnInit(): void {
-
-    // function on() {
-    //   document.getElementById("fafafabar").style.display = "none";
-    //       document.getElementById("side-container").style.display = "block";
-    //       document.getElementById("side").style.display = "block";
-    //       document.getElementById("roundimage").style.display = "block";
-    //   }
-      
-    //   function off() {
-    //   document.getElementById("fafafabar").style.display = "block";
-    //       document.getElementById("side-container").style.display = "none";
-    //       document.getElementById("roundimage").style.display = "block";
-    //   }
-      
+    if(parseInt(sessionStorage.getItem('user'))>0)
+    {
+      this.uId = parseInt(sessionStorage.getItem('user'));
+      this.loginOrLogout = 'Logout';
+    }
+    else
+    {
+      this.loginOrLogout = 'Login';
+    }
   }
+
+  
+  loginUser()
+  {
+    this._router.navigate(['/login']);
+  }
+
+  logoutUser()
+  {
+    alert('User Logged Out');
+    sessionStorage.setItem('user',null);
+    this.uId = null;
+    this.ngOnInit();
+    this._router.navigate(['home']);
+  }
+
+  
 
 }

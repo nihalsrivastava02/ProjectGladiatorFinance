@@ -9,19 +9,32 @@
 </head>
 <body>
 	<div >
-		<div id="navbar">
-			<a href="#home">Home</a>
-			<a href="#news">News</a>
-			<a href="#contact">Contact</a>
+		<div id="navbar" >
+			<button class="btn btn-outline-light w-75" (click)="loginUser()" *ngIf="loginOrLogout==='Login' else userLoggedIn">
+                Login
+            </button>
+            <ng-template #userLoggedIn>
+                <button class="btn btn-outline-danger w-75" (click)="logoutUser()">
+                    Logout
+                </button>
+            </ng-template>
+            <button class="btn btn-success" [routerLink]="['/register']" >Sign Up</button>
+            <button class="btn btn-success" [routerLink]="['/userdashboard']" 
+            *ngIf="uId>0"
+            >My Profile</button>
 		</div>
 	</div>
 <div>
 <div id="side">	
 	<nav id="side-container" >
+		<div class="head"><h2> DhanKosh </h2>
+			<img src="assets/img/logo.png" height="50px" width="80px"> <br>
+			<br>
+		</div>
 		<div class="barblock">
-			<a href="#portfolio" class="button"  onclick="off()">Clothes</a> 
+			<a href="#portfolio" class="button"  onclick="off()">Devices</a> 
     		<a href="#about"  class="button" onclick="off()">Appliances</a> 
-    		<a href="#contact" class="button" onclick="off()">Cars</a>
+    		<a href="#contact" class="button" onclick="off()">Jewellery</a>
 
 		</div>
 	</nav>
@@ -34,143 +47,68 @@
 		<div class="content">
 			<div id="portfolio">
 			</div>
-			<img class="imgabout" src="https://www.w3schools.com/w3images/avatar_g.jpg" >
-			<img class="imgabout" src="https://www.w3schools.com/w3images/me2.jpg" >
+			<br><br>Upcoming Products<br><br>
+			<img class="imgabout" src="./assets/31.jpg" >
+			<img class="imgabout" src="./assets/32.jpg" >
+			<br><br>Available Products<br><br>
 			<div class="imgbox">
-				<img  class="img" src="https://www.w3schools.com/w3images/mountains.jpg" >
+				<img  class="img" src="./assets/1.jpg" >
 				<div class="boxcontent">
-					<h4>Images</h4>
-					<p>pic credit goes to xyz</p>
+					<h4>HP Spectre</h4>
+					<a href="/product1">Buy Now</a>
 				</div>
 			</div>
 			<div class="imgbox">
-				<img  class="img" src="https://www.w3schools.com/w3images/mountains.jpg" >
+				<img  class="img" src="./assets/2.jpg" >
 				<div class="boxcontent">
-					<h4>Images</h4>
-					<p>pic credit goes to xyz</p>
+					<h4>Motorola Edge+</h4>
+					<a href="/product2">Buy Now</a>
 				</div>
 			</div>
-			<div class="imgbox">
-				<img  class="img" src="https://www.w3schools.com/w3images/mountains.jpg" >
-				<div class="boxcontent">
-					<h4>Images</h4>
-					<p>pic credit goes to xyz</p>
-				</div>
-			</div>
-			<div class="imgbox">
-				<img  class="img" src="https://www.w3schools.com/w3images/mountains.jpg" >
-				<div class="boxcontent">
-					<h4>Images</h4>
-					<p>pic credit goes to xyz</p>
-				</div>	
-			</div>
-			<div class="imgbox">
-				<img  class="img" src="https://www.w3schools.com/w3images/mountains.jpg" >
-				<div class="boxcontent">
-					<h4>Images</h4>
-					<p>pic credit goes to xyz</p>
-				</div>
-			</div>
-			<div class="imgbox">
-				<img  class="img" src="https://www.w3schools.com/w3images/mountains.jpg" >
-				<div class="boxcontent">
-					<h4>Images</h4>
-					<p>pic credit goes to xyz</p>
-				</div>	
-			</div>
+			
 			<div>
 				<!-- about section -->
-				<img id="about" class="imgabout" src="https://www.w3schools.com/w3images/avatar_g.jpg" >
-				<img  class="imgabout" src="https://www.w3schools.com/w3images/me2.jpg" >
+				<br><br>Upcoming Products<br><br>
+				<img id="about" class="imgabout" src="./assets/11.jpg" >
+				<img  class="imgabout" src="./assets/12.jpg" >
+				<br><br>Available Products<br><br>
 				<div class="imgbox">
-					<img  class="img" src="https://www.w3schools.com/w3images/mountains.jpg" >
+					<img  class="img" src="./assets/3.jpg" >
 					<div class="boxcontent">
-						<h4>Images</h4>
-						<p>pic credit goes to xyz</p>
+						<h4>onePlus TV</h4>
+						<a href="/product3">Buy Now</a>
 					</div>
 				</div>
 				<div class="imgbox">
-					<img  class="img" src="https://www.w3schools.com/w3images/mountains.jpg" >
+					<img  class="img" src="./assets/4.jpg" >
 					<div class="boxcontent">
-						<h4>Images</h4>
-						<p>pic credit goes to xyz</p>
+						<h4>Bluestar AC</h4>
+						<a href="/product4">Buy Now</a>
 					</div>
 				</div>
-				<div class="imgbox">
-					<img  class="img" src="https://www.w3schools.com/w3images/mountains.jpg" >
-					<div class="boxcontent">
-						<h4>Images</h4>
-						<p>pic credit goes to xyz</p>
-					</div>
-				</div>
-				<div class="imgbox">
-					<img  class="img" src="https://www.w3schools.com/w3images/mountains.jpg" >
-					<div class="boxcontent">
-						<h4>Images</h4>
-						<p>pic credit goes to xyz</p>
-					</div>	
-				</div>
-				<div class="imgbox">
-					<img  class="img" src="https://www.w3schools.com/w3images/mountains.jpg" >
-					<div class="boxcontent">
-						<h4>Images</h4>
-						<p>pic credit goes to xyz</p>
-					</div>
-				</div>
-				<div class="imgbox">
-					<img  class="img" src="https://www.w3schools.com/w3images/mountains.jpg" >
-					<div class="boxcontent">
-						<h4>Images</h4>
-						<p>pic credit goes to xyz</p>
-					</div>	
-				</div>
+				
 				
 			</div>
 			<!-- contact section -->
-				<img id="contact" class="imgabout" src="https://www.w3schools.com/w3images/avatar_g.jpg" >
-				<img  class="imgabout" src="https://www.w3schools.com/w3images/me2.jpg" >
+				<br><br>Upcoming Products<br><br>
+				<img id="contact" class="imgabout" src="./assets/21.jpg" >
+				<img  class="imgabout" src="./assets/22.jpg" >
+				<br><br>Available Products<br><br>
 				<div class="imgbox">
-					<img  class="img" src="https://www.w3schools.com/w3images/mountains.jpg" >
+					<img  class="img" src="./assets/5.jpg" >
 					<div class="boxcontent">
-						<h4>Images</h4>
-						<p>pic credit goes to xyz</p>
+						<h4>Saura Neckwear</h4>
+						<a href="/product5">Buy Now</a>
 					</div>
 				</div>
 				<div class="imgbox">
-					<img  class="img" src="https://www.w3schools.com/w3images/mountains.jpg" >
+					<img  class="img" src="./assets/6.jpg" >
 					<div class="boxcontent">
-						<h4>Images</h4>
-						<p>pic credit goes to xyz</p>
+						<h4>Gili Earring</h4>
+						<a href="/product6">Buy Now</a>
 					</div>
 				</div>
-				<div class="imgbox">
-					<img  class="img" src="https://www.w3schools.com/w3images/mountains.jpg" >
-					<div class="boxcontent">
-						<h4>Images</h4>
-						<p>pic credit goes to xyz</p>
-					</div>
-				</div>
-				<div class="imgbox">
-					<img  class="img" src="https://www.w3schools.com/w3images/mountains.jpg" >
-					<div class="boxcontent">
-						<h4>Images</h4>
-						<p>pic credit goes to xyz</p>
-					</div>	
-				</div>
-				<div class="imgbox">
-					<img  class="img" src="https://www.w3schools.com/w3images/mountains.jpg" >
-					<div class="boxcontent">
-						<h4>Images</h4>
-						<p>pic credit goes to xyz</p>
-					</div>
-				</div>
-				<div class="imgbox">
-					<img  class="img" src="https://www.w3schools.com/w3images/mountains.jpg" >
-					<div class="boxcontent">
-						<h4>Images</h4>
-						<p>pic credit goes to xyz</p>
-					</div>	
-				</div>
+				
 		</div>
 
 	</div>
